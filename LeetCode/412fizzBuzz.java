@@ -1,5 +1,23 @@
-// 412. Fizz Buzz
-
+class Solution {
+    public List<String> fizzBuzz(int n) {
+        // String[] answer = new String[n];
+        List<String> answer = new ArrayList<>();
+        int i = 1;
+        while (i < n + 1) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                answer.add("FizzBuzz");
+            } else if (i % 3 == 0) {
+                answer.add("Fizz");
+            } else if (i % 5 == 0) {
+                answer.add("Buzz");
+            } else {
+                answer.add(String.valueOf(i));
+            }
+            i++;
+        }
+        return answer;
+    }
+}
 
 
 """

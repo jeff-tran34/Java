@@ -6,11 +6,10 @@ class Solution {
         while (x > 0) {
             if (x % 2 == 0) {
                 x = x / 2;
-                count++;
             } else {
                 x--;
-                count++;
             }
+            count++;
         }
         return count;
     }

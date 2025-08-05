@@ -15,6 +15,25 @@ class Solution {
     }
 }
 
+// Bit-Wise Solution
+class Solution {
+    public int numberOfSteps(int num) {
+        int count = 0;
+        int x = num;
+        
+        while (x > 0) {
+            if ((x & 1) == 0) { //num: xxxxxxx1 & bitmask:00000001
+                x >>= 1; //Shifts bit by 1 to divide by 2
+            } else {
+                x--;
+            }
+            count++;
+        }
+        return count;
+    }
+}
+
+
 // Prompt
 """
 Given an integer num, return the number of steps to reduce it to zero.

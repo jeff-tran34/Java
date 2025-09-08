@@ -2,6 +2,11 @@
 // Solution(not complete)
 
 class Solution {
+    // Recursice depth-first search that picks the next divisor from divs[start...], multiplies it into prod, and appends to path until you have k factors whose product is n.
+    public int[] dfs(start, picked, prod, path) {
+        
+    }
+    // main function
     public int[] minDifference(int n, int k) {
         int[] divs = new int[];
         int[] output = new int[k];
